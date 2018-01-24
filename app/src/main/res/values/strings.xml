@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">permisswion</string>
+    <string name="has_no_permission">无法获取写外部存储权限</string>
+    <string name="permission_dial">打电话</string>
+</resources>
