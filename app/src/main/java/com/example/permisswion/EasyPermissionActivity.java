@@ -1,11 +1,10 @@
 package com.example.permisswion;
 
 import android.Manifest;
+import android.annotation.SuppressLint;
 import android.content.Intent;
-import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.support.annotation.NonNull;
-import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -39,6 +38,7 @@ public class EasyPermissionActivity extends AppCompatActivity implements View.On
         }
     }
 
+    @SuppressLint("MissingPermission")
     private void makePhoneCall() {
         Intent intent = new Intent(Intent.ACTION_CALL);
         intent.setData(Uri.parse("tel:14899992222"));
